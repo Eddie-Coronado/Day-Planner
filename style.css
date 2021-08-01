@@ -6,11 +6,11 @@ body {
   
   textarea{
     background: transparent;
-    border: none;
     resize: none;
     color: #000000;
-    border-left: 1px solid black;
+    border:1px solid black;
     padding: 10px;
+    text-align: center;
   }
   
   .jumbotron {
@@ -33,7 +33,7 @@ body {
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid white;
   }
   
   .colorcode {
@@ -69,12 +69,21 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
-  
+
+  .time {
+    text-align: center;
+    padding-top: 30px;
+    border:1px solid black;
+  }
+
+/*   
   .container {
     display:table;
+    padding:5px;
+    border:1px solid #333;
   }
-  
-  .container .row {
+   */
+  /* .container .row {
     display:table-row;
   }
   
@@ -82,4 +91,4 @@ body {
     display:table-cell;
     padding:5px;
     border:1px solid #333;
-}
+} */

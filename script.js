@@ -1,14 +1,34 @@
-// var currentHour = (new Date()).getHours();
-// $()
-//   .each(function(){
-//     var val = parseInt($(this).prop('id'));
-//     if(val > currentHour && val < currentHour + 6){
-//       $(this).css('background-color','Blue');
-//     }else if(val < currentHour && val > currentHour-6){
-//       $(this).css('background-color','Red');
-//     }else if(val === currentHour){
-//       $(this).css('background-color','Green');
-//     }else{
-//       $(this).css('background-color','White');
-//     }
-//   });
+setInterval(currentDate,1000);
+
+// const current = moment().format('h:mm:ss a');
+
+$('#8 .text').val(localStorage.getItem('8'))
+$('#9 .text').val(localStorage.getItem('9'))
+$('#10 .text').val(localStorage.getItem('10'))
+$('#11 .text').val(localStorage.getItem('11'))
+$('#12 .text').val(localStorage.getItem('12'))
+$('#13 .text').val(localStorage.getItem('13'))
+$('#14 .text').val(localStorage.getItem('14'))
+$('#15 .text').val(localStorage.getItem('15'))
+$('#16 .text').val(localStorage.getItem('16'))
+$('#17 .text').val(localStorage.getItem('17'))
+$('#18 .text').val(localStorage.getItem('18'))
+
+
+function currentDate() {
+    const currentDay = document.getElementById('currentDay');
+    const date = moment().format('MMM Do YY');
+    const today = moment().format('dddd');
+    currentDay.textContent = today + ','+ ' ' + date;
+}
+
+$(document).ready(function() {
+
+$('.saveBtn').on('click', function () {
+    const timeID = $(this).parent().attr('id');
+    const inputEl = $(this).siblings('.text').val();
+
+    localStorage.setItem(timeID, inputEl);
+})
+})
+
