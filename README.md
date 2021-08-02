@@ -1,6 +1,7 @@
 
 
 # Day Planner
+![Day Planner](https://user-images.githubusercontent.com/75331399/127933022-2b09b0f7-8e44-4e0d-8245-e4ff6750feaa.PNG)
 
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
